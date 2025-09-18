@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoCycle Hub - Find Recycling Centers</title>
+  <link rel="stylesheet" href="css/find-centers.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">
+      <a href="index.html">EcoCycle Hub</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classifier.html">AI Classifier</a></li>
+      <li><a href="about.html">Know Your Waste</a></li>
+      <li><a href="find-centers.html" class="active">Find Centers</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="section-header">
+      <h1>Find Recycling Centers in Navi Mumbai</h1>
+      <p>Search for facilities near you to dispose of waste responsibly.</p>
+    </header>
+
+    <section class="section search-section">
+      <div class="search-bar">
+        <input type="text" placeholder="Enter your area (e.g., Vashi, Nerul, Panvel)...">
+        <select>
+          <option value="all">All Waste Types</option>
+          <option value="e-waste">E-Waste</option>
+          <option value="plastic">Plastic</option>
+          <option value="paper">Paper & Cardboard</option>
+          <option value="glass">Glass</option>
+        </select>
+        <button class="btn btn-green">Search</button>
+      </div>
+    </section>
+
+    <section class="section results-section">
+      <div class="results-grid">
+        <div class="center-card">
+          <h3>Navi Mumbai E-Waste Collection</h3>
+          <p class="address">Shop 12, Sector 17, Vashi, Navi Mumbai, Maharashtra 400703</p>
+          <div class="waste-types">
+            <span>E-Waste</span>
+            <span>Batteries</span>
+          </div>
+          <a href="#" class="map-link">View on Map</a>
+        </div>
+        <div class="center-card">
+          <h3>Green-First Recycling Point</h3>
+          <p class="address">Plot 55, MIDC, Turbhe, Navi Mumbai, Maharashtra 400705</p>
+          <div class="waste-types">
+            <span>Plastic</span>
+            <span>Paper</span>
+            <span>Metal</span>
+          </div>
+          <a href="#" class="map-link">View on Map</a>
+        </div>
+      </div>
+      <div class="map-placeholder">
+        <p>Interactive map will be displayed here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+    <p>&copy; 2025 EcoCycle Hub</p>
+  </footer>
+
+  <script defer src="script.js"></script>
+</body>
+</html>

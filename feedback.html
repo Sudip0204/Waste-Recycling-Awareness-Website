@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoCycle Hub – Feedback</title>
+  <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">
+      <a href="index.html">EcoCycle Hub</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classifier.html">AI Classifier</a></li>
+      <li><a href="about.html">Know Your Waste</a></li>
+      <li><a href="find-centers.html">Find Centers</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="section-header">
+      <h1>Feedback & Voting</h1>
+      <p>Help us improve! Rate your experience and vote for the features you want to see next.</p>
+    </header>
+
+    <section class="section feedback-form">
+      <form id="feedbackForm">
+        <label>Your Rating:</label>
+        <div class="stars">
+          <span data-value="1">☆</span>
+          <span data-value="2">☆</span>
+          <span data-value="3">☆</span>
+          <span data-value="4">☆</span>
+          <span data-value="5">☆</span>
+        </div>
+        
+        <label for="vote">Vote for a New Feature:</label>
+        <select id="vote" name="vote">
+          <option value="map">Interactive Recycling Map</option>
+          <option value="challenges">Community Waste-Reduction Challenges</option>
+        </select>
+        
+        <label for="comments">Comments or Suggestions:</label>
+        <textarea id="comments" name="comments" placeholder="Tell us what you think..."></textarea>
+        
+        <button type="submit">Submit Feedback</button>
+      </form>
+      <p id="feedbackStatus"></p>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+    <p>&copy; 2025 EcoCycle Hub</p>
+  </footer>
+
+  <script defer src="script.js"></script>
+</body>
+</html>

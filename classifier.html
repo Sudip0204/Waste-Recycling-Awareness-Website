@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoCycle Hub - AI Waste Classifier</title>
+  <link rel="stylesheet" href="css/classifier.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">
+      <a href="index.html">EcoCycle Hub</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classifier.html" class="active">AI Classifier</a></li>
+      <li><a href="about.html">Know Your Waste</a></li>
+      <li><a href="find-centers.html">Find Centers</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="section-header">
+      <h1>AI Waste Classifier</h1>
+      <p>Upload a picture of an item, and our AI will help you identify the correct waste category.</p>
+    </header>
+
+    <section class="section classifier-section">
+      <div class="classifier-box">
+        <div class="file-upload-wrapper">
+          <input type="file" id="imageInput" accept="image/*" class="file-input-hidden">
+          <label for="imageInput" class="btn btn-upload">Choose File</label>
+          <span id="fileNameDisplay" class="file-name-display">No file chosen</span>
+        </div>
+        <button id="classifyBtn" class="btn btn-green">Classify</button>
+      </div>
+      <p id="classificationResult" class="result-text"></p>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+    <p>&copy; 2025 EcoCycle Hub</p>
+  </footer>
+
+  <script defer src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+/* --- Common Styles --- */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-brand a {
+  color: #212529;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #6c757d;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #28a745;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+footer nav { margin-bottom: 1rem; }
+
+footer nav a {
+  color: #e9ecef;
+  text-decoration: none;
+  margin: 0 0.75rem;
+  transition: color 0.2s;
+}
+
+footer nav a:hover { color: white; }
+footer p { color: #adb5bd; margin-top: 1rem; }
+
+/* --- Page Specific Styles --- */
+.section-header {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+  background-color: #e9ecef;
+}
+
+.section-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-top: 4px solid #28a745;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #218838;
+}
+
+#quiz {
+  background: #ffffff;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  border-radius: 8px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#quiz h2 { margin-top: 0; }
+#quiz #quizScore { font-weight: bold; margin-top: 1rem; }
+
+.btn, #quiz button {
+  text-decoration: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-green, #quiz button {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-green:hover, #quiz button:hover {
+  background-color: #218838;
+}
