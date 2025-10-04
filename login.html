@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login — Waste Recycling Awareness</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+
+    <main class="login-wrapper" aria-labelledby="loginHeading">
+      <section class="login-card" aria-label="Login form">
+        <header class="card-header">
+          <h1 id="loginHeading">Welcome back</h1>
+          <p class="muted">Sign in to continue to Waste Recycling Awareness</p>
+        </header>
+
+        <form id="loginForm" novalidate>
+          <div class="field">
+            <label for="username">Username or email</label>
+            <input id="username" name="username" type="text" inputmode="email" autocomplete="username" placeholder="you@example.com or your username" required />
+            <div class="error" id="usernameError" aria-live="polite"></div>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="password-row">
+              <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required minlength="6" />
+              <button type="button" class="toggle-pass" id="togglePass" aria-label="Show password">Show</button>
+            </div>
+            <div class="error" id="passwordError" aria-live="polite"></div>
+          </div>
+
+          <div class="options">
+            <label class="remember">
+              <input type="checkbox" id="remember" name="remember" />
+              Remember me
+            </label>
+            <a class="forgot" href="#" id="forgot">Forgot password?</a>
+          </div>
+
+          <div class="actions">
+            <button id="loginBtn" class="btn primary" type="submit">Login</button>
+          </div>
+
+          <div id="formMessage" class="form-message" aria-live="polite"></div>
+        </form>
+
+        <footer class="card-footer">
+          <p>Don't have an account? <a href="#">Sign up</a></p>
+        </footer>
+      </section>
+    </main>
+
+    <script src="js/login.js" defer></script>
+  </body>
+</html>

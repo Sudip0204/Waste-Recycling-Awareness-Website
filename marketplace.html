@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoCycle Hub - Recyclable Waste Marketplace</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/marketplace.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">
+      <a href="index.html">EcoCycle Hub</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classifier.html">AI Classifier</a></li>
+      <li><a href="about.html">Know Your Waste</a></li>
+      <li><a href="find-centers.html">Find Centers</a></li>
+      <li><a href="marketplace.html" class="active">Marketplace</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Get higher value for your used materials</h1>
+        <p>Help earth reduce waste and lead society to a brighter future</p>
+        <div class="search-container">
+          <div class="search-box">
+            <div class="search-input">
+              <input type="text" id="searchInput" placeholder="What type of stuff are you looking for?">
+            </div>
+            <div class="location-input">
+              <input type="text" id="locationInput" placeholder="Location">
+            </div>
+            <button class="btn-find">Find Items</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marketplace Section -->
+    <section class="marketplace-section">
+      <div class="container">
+        <div class="marketplace-layout">
+          <!-- Filters -->
+          <aside class="filters">
+            <div class="filter-group">
+              <h3>Categories</h3>
+              <div class="filter-options">
+                <label><input type="checkbox" value="Clothing" checked> Clothing</label>
+                <label><input type="checkbox" value="Electronics" checked> Electronics</label>
+                <label><input type="checkbox" value="HomeGarden" checked> Home & Garden</label>
+                <label><input type="checkbox" value="Automotive" checked> Automotive</label>
+                <label><input type="checkbox" value="Others" checked> Others</label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h3>Price Range (₹)</h3>
+              <div class="price-inputs">
+                <input type="number" id="priceMin" placeholder="Min">
+                <span>to</span>
+                <input type="number" id="priceMax" placeholder="Max">
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h3>Condition</h3>
+              <div class="filter-options">
+                <label><input type="checkbox" value="New" checked> New</label>
+                <label><input type="checkbox" value="Good" checked> Good</label>
+                <label><input type="checkbox" value="Fair" checked> Fair</label>
+                <label><input type="checkbox" value="Used" checked> Used</label>
+              </div>
+            </div>
+
+            <div class="filter-actions">
+              <button class="btn-apply">Apply Filters</button>
+              <button class="btn-reset">Reset</button>
+            </div>
+          </aside>
+
+          <!-- Products Grid -->
+          <div class="products-area">
+            <div class="products-header">
+              <div class="products-count">
+                Showing <span id="shown">0</span> of <span id="total">0</span> items
+              </div>
+              <div class="products-sort">
+                <select id="sortSelect">
+                  <option value="newest">Newest First</option>
+                  <option value="price_low">Price: Low to High</option>
+                  <option value="price_high">Price: High to Low</option>
+                  <option value="popular">Most Popular</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+              <!-- Products will be populated by JavaScript -->
+            </div>
+
+            <div class="load-more">
+              <button class="btn-load-more">Load More Items</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <nav>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+      </nav>
+      <p>&copy; 2025 EcoCycle Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/marketplace.js"></script>
+</body>
+</html>
+
+  <script src="script.js"></script>
+</body>
+</html>
