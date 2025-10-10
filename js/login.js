@@ -8,6 +8,15 @@ document.addEventListener('DOMContentLoaded', function(){
   const formMessage = document.getElementById('formMessage');
   const togglePass = document.getElementById('togglePass');
 
+  // Check if user is already logged in
+  if (sessionStorage.getItem('isLoggedIn') === 'true') {
+    if (sessionStorage.getItem('isSeller') === 'true') {
+      window.location.href = 'seller-dashboard.html';
+    } else {
+      window.location.href = 'index.html';
+    }
+  }
+
   function validateEmailOrUsername(value){
     if(!value) return 'Please enter username or email.';
     // simple email pattern test
@@ -55,14 +64,21 @@ document.addEventListener('DOMContentLoaded', function(){
 
     if(hasError) return;
 
-    // Demo success behavior: show message and reset password field
-    formMessage.textContent = 'Logging in... (demo)';
-    // mimic network delay
-    setTimeout(()=>{
-      const remember = document.getElementById('remember').checked;
-      formMessage.textContent = `Login successful. Remember: ${remember ? 'yes' : 'no'}`;
-      password.value = '';
-    }, 900);
+    // Get selected user type
+    const userType = document.querySelector('input[name="userType"]:checked').value;
+
+    // Accept any email and password for login
+    formMessage.textContent = 'Login successful! Redirecting...';
+    formMessage.className = 'form-message success';
+    sessionStorage.setItem('isLoggedIn', 'true');
+    sessionStorage.setItem('isSeller', (userType === 'seller').toString());
+    setTimeout(() => {
+      if (userType === 'seller') {
+        window.location.href = 'seller-dashboard.html';
+      } else {
+        window.location.href = 'index.html';
+      }
+    }, 1000);
   });
 
   // Demo social buttons
